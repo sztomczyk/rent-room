@@ -20,6 +20,7 @@ public class AboutAppActivity extends BaseActivity {
                 this.finish();
                 return true;
         }
-        return super.onOptionsItemSelected(item);
+
+        return super.onOptionsItemSelected()
     }
 }

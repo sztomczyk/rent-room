@@ -77,38 +77,38 @@ public class MainActivity extends BaseActivity {
 
         @Override
         protected List<Room> doInBackground(final Void... voids) {
-            final RoomRepo roomRepo = new RoomRepo();
-            List<Room> roomsInfo = null;
-            String logs = "";
+            final RoomRepo repozytorujZPokojami = new RoomRepo();
+            List<Room> informacjeOPokojach = null;
+            String logi = "";
 
             if (new InternetValidation().isConnected(MainActivity.this)) {
                 try {
-                    roomsInfo = new DropboxHelper().getRoomList();
+                    informacjeOPokojach = new DropboxHelper().getRoomList();
                 } catch (final IOException | JSONException pE) {
-                    logs = errorLogs.formLogs(pE);
+                    logi = errorLogs.formLogs(pE);
                 }
 
-                if (roomsInfo != null) {
-                    roomRepo.delete();
-                    roomRepo.insert(roomsInfo);
+                if (informacjeOPokojach != null) {
+                    repozytorujZPokojami.delete();
+                    repozytorujZPokojami.insert(informacjeOPokojach);
 
                 } else {
-                    roomsInfo = roomRepo.selectAll();
+                    informacjeOPokojach = repozytorujZPokojami.selectAll();
 
-                    if (roomsInfo == null) {
+                    if (informacjeOPokojach == null) {
                         publishProgress(getString(R.string.server_problem), logs);
                     }
                 }
 
             } else {
-                roomsInfo = roomRepo.selectAll();
+                informacjeOPokojach = repozytorujZPokojami.selectAll();
 
-                if (roomsInfo == null) {
+                if (informacjeOPokojach == null) {
                     publishProgress(getString(R.string.internet_switch_on));
                 }
             }
 
-            return roomsInfo;
+            return informacjeOPokojach;
         }
 
         @Override
