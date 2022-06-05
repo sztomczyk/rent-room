@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">RentRoom</string>
+    <string name="version">Version 1.0</string>
+    <string name="about_app">About app</string>
+    <string name="about_footer" translatable="false">© 2022, RentRoom</string>
+    <string name="OK" translatable="false">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="previous_image">previous_image</string>
+    <string name="next_image">next_image</string>
+
+    <!-- Menu items -->
+    <string name="photo_gallery">Photo gallery</string>
+    <string name="about_hotel">About Hotel</string>
+    <string name="accommodations">Accommodations</string>
+
+    <!-- For ActionBarDrawer -->
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Room Booking Fragment strings -->
+    <string name="arrival">Arrival date</string>
+    <string name="departure">Departure date</string>
+
+    <!-- Room Info Fragment strings -->
+    <string name="room_name">%1$s</string>
+    <string name="price">%1$s$</string>
+    <string name="guests">Guests : %1$s person(s)</string>
+    <string name="room_image">Room image</string>
+    <string name="price_info">Nightly price without additional services</string>
+
+    <!-- Room Booking Fragment strings -->
+    <string name="name">Name :</string>
+    <string name="surname">Surname :</string>
+    <string name="email_address">Email address :</string>
+    <string name="phone_number">Phone number :</string>
+    <string name="room_details">Reservation details : </string>
+    <string name="personal_info">Personal info : </string>
+    <string name="make_reservation">Book now</string>
+    <string name="default_date">%1$s-%2$s-%3$s</string>
+    <string name="no_internet_warning">You have no Internet connection to make a reservation!</string>
+    <string name="server_problem">Sorry, there are some problems on server! Please, try later or send an email! Thank you!</string>
+    <string name="exit_app">Exit app</string>
+
+    <!-- Dialog strings -->
+    <string name="error_dialog">Error</string>
+    <string name="confirmation_title">Booking confirmation</string>
+    <string name="dialog_arrival">"\nArrival : "</string>
+    <string name="dialog_departure">"\nDeparture : "</string>
+    <string name="dialog_price">"\nTotal price : "</string>
+
+    <!-- Validation strings -->
+    <string name="validation_empty">Can\'t be empty!</string>
+    <string name="more_validation">Arrival date can\'t be more than departure date!</string>
+    <string name="equal_validaton">Departure date can\'t be equal to arrival date!</string>
+    <string name="email_validation">Not valid email address</string>
+    <string name="room">"Room name : "</string>
+    <string name="dollar">$</string>
+    <string name="internet_switch_on">Please, switch on Internet connection for data retrieving and restart app!</string>
+    <string name="parsing_error">Error is occurred during date parsing!</string>
+    <string name="send_email">Send email</string>
+    <string name="actual_hotel_address">Actual hotel address</string>
+    <string name="phone_text">2014-1777</string>
+    <string name="email_text">ocean_hotel@gmail.com</string>
+    <string name="ocean_hotel">Ocean Hotel</string>
+</resources>
